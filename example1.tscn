@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://q6y0xb8ledrk"]
+
+[ext_resource type="PackedScene" uid="uid://uijl3kfr48ea" path="res://floor.tscn" id="1_txwrh"]
+[ext_resource type="PackedScene" uid="uid://j4k2vl30by17" path="res://player.tscn" id="2_sny4s"]
+
+[node name="Node3D" type="Node3D" unique_id=964897556]
+
+[node name="StaticBody3D" parent="." unique_id=115980163 instance=ExtResource("1_txwrh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="Player" parent="." unique_id=563942819 instance=ExtResource("2_sny4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1659112564]
+transform = Transform3D(1, 0, 0, 0, 0.7746907, 0.6323403, 0, -0.6323403, 0.7746907, 0, 5.2666216, 0)
